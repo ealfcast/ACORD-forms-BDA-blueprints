@@ -1,0 +1,209 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"description": "default",
+	"class": "default",
+	"type": "object",
+	"definitions": {},
+	"properties": {
+		"IS THE APPLICANT A SUBSIDIARY OF ANOTHER ENTITY?": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant is a subsidiary of another entity"
+		},
+		"PARENT COMPANY NAME": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Name of the parent company if the applicant is a subsidiary"
+		},
+		"RELATIONSHIP DESCRIPTION": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Description of the relationship between the applicant and the parent company"
+		},
+		"PERCENTAGE OWNED": {
+			"type": "number",
+			"inferenceType": "explicit",
+			"instruction": "Percentage of the applicant owned by the parent company"
+		},
+		"DOES THE APPLICANT HAVE ANY SUBSIDIARIES?": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant has any subsidiaries"
+		},
+		"SUBSIDIARY COMPANY NAME": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Name of the subsidiary company if the applicant has any"
+		},
+		"SUBSIDIARY RELATIONSHIP DESCRIPTION": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Description of the relationship between the applicant and the subsidiary company"
+		},
+		"SUBSIDIARY PERCENTAGE OWNED": {
+			"type": "number",
+			"inferenceType": "explicit",
+			"instruction": "Percentage of the subsidiary company owned by the applicant"
+		},
+		"NON-PAYMENT": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the reason for policy cancellation/non-renewal was non-payment"
+		},
+		"AGENT NO LONGER REPRESENTS CARRIER": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the reason for policy cancellation/non-renewal was the agent no longer representing the carrier"
+		},
+		"UNDERWRITING": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the reason for policy cancellation/non-renewal was underwriting"
+		},
+		"CONDITION CORRECTED": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the reason for policy cancellation/non-renewal was that the condition was corrected"
+		},
+		"CONDITION CORRECTED DESCRIPTION": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Description of the condition that was corrected"
+		},
+		"OCCURRENCE DATE": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Date of the policy cancellation/non-renewal occurrence"
+		},
+		"EXPLANATION": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Explanation of the policy cancellation/non-renewal"
+		},
+		"RESOLUTION": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Resolution of the policy cancellation/non-renewal"
+		},
+		"RESOLUTION DATE": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Date of the policy cancellation/non-renewal resolution"
+		},
+		"IS A FORMAL SAFETY PROGRAM IN OPERATION?": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant has a formal safety program in operation"
+		},
+		"SAFETY MANUAL": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant has a safety manual as part of their safety program"
+		},
+		"SAFETY POSITION": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant has a dedicated safety position as part of their safety program"
+		},
+		"MONTHLY MEETINGS": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant holds monthly safety meetings as part of their safety program"
+		},
+		"OSHA": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant's safety program includes OSHA compliance"
+		},
+		"ANY EXPOSURE TO FLAMMABLES, EXPLOSIVES, CHEMICALS?": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant has any exposure to flammables, explosives, or chemicals"
+		},
+		"EXPOSURE DESCRIPTION": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Description of the applicant's exposure to flammables, explosives, or chemicals"
+		},
+		"ANY OTHER INSURANCE WITH THIS COMPANY?": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant has any other insurance policies with the same company"
+		},
+		"OTHER POLICY NUMBERS": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "List of other policy numbers the applicant has with the same company"
+		},
+		"ANY POLICY OR COVERAGE DECLINED, CANCELLED OR NON-RENEWED DU": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant had any policy or coverage declined, cancelled or non-renewed during the prior 3 years"
+		},
+		"ANY PAST LOSSES OR CLAIMS RELATING TO SEXUAL ABUSE OR MOLEST": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant had any past losses or claims related to sexual abuse, molestation, discrimination or negligent hiring"
+		},
+		"DURING THE LAST FIVE YEARS (TEN IN RI), HAS ANY APPLICANT BE": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant has been indicted or convicted of fraud, bribery, arson or any other arson-related crime in the last 5 (10 in RI) years"
+		},
+		"ANY UNCORRECTED FIRE ANDOR SAFETY CODE VIOLATIONS?": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant has any uncorrected fire and/or safety code violations"
+		},
+		"HAS APPLICANT HAD A FORECLOSURE, REPOSSESSION, BANKRUPTCY OR": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant had a foreclosure, repossession, bankruptcy or filed for bankruptcy in the last 5 years"
+		},
+		"HAS APPLICANT HAD A JUDGEMENT OR LIEN DURING THE LAST FIVE (": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant had a judgement or lien in the last 5 years"
+		},
+		"HAS BUSINESS BEEN PLACED IN A TRUST?": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant's business has been placed in a trust"
+		},
+		"TRUST NAME": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Name of the trust if the business has been placed in a trust"
+		},
+		"ANY FOREIGN OPERATIONS, FOREIGN PRODUCTS DISTRIBUTED IN USA,": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant has any foreign operations, foreign products distributed in USA, or US products sold/distributed in foreign countries"
+		},
+		"DOES APPLICANT HAVE OTHER BUSINESS VENTURES FOR WHICH COVERA": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant has other business ventures for which coverage is not requested"
+		},
+		"DOES APPLICANT OWN  LEASE  OPERATE ANY DRONES?": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant owns, leases or operates any drones"
+		},
+		"DRONE USE DESCRIPTION": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Description of how the applicant uses any drones they own, lease or operate"
+		},
+		"DOES APPLICANT HIRE OTHERS TO OPERATE DRONES?": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Indicates if the applicant hires others to operate any drones they own or lease"
+		},
+		"HIRED DRONE OPERATOR USE DESCRIPTION": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Description of how the applicant uses any hired drone operators"
+		}
+	}
+}
