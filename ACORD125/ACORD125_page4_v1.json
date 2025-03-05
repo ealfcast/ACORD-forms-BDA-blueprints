@@ -1,0 +1,191 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"description": "default",
+	"class": "default",
+	"type": "object",
+	"definitions": {
+		"PRIOR_CARRIER_INFORMATION": {
+			"type": "object",
+			"properties": {
+				"YEAR": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Year of the prior policy"
+				},
+				"CATEGORY": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Category of the prior policy"
+				},
+				"GENERAL_LIABILITY_CARRIER": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "General liability insurance carrier"
+				},
+				"GENERAL_LIABILITY_POLICY_NUMBER": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "General liability policy number"
+				},
+				"GENERAL_LIABILITY_PREMIUM": {
+					"type": "number",
+					"inferenceType": "explicit",
+					"instruction": "General liability premium amount"
+				},
+				"GENERAL_LIABILITY_EFFECTIVE_DATE": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "General liability policy effective date"
+				},
+				"GENERAL_LIABILITY_EXPIRATION_DATE": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "General liability policy expiration date"
+				},
+				"AUTOMOBILE_CARRIER": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Automobile insurance carrier"
+				},
+				"AUTOMOBILE_POLICY_NUMBER": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Automobile policy number"
+				},
+				"AUTOMOBILE_PREMIUM": {
+					"type": "number",
+					"inferenceType": "explicit",
+					"instruction": "Automobile premium amount"
+				},
+				"AUTOMOBILE_EFFECTIVE_DATE": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Automobile policy effective date"
+				},
+				"AUTOMOBILE_EXPIRATION_DATE": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Automobile policy expiration date"
+				},
+				"PROPERTY_CARRIER": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Property insurance carrier"
+				},
+				"PROPERTY_POLICY_NUMBER": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Property policy number"
+				},
+				"PROPERTY_PREMIUM": {
+					"type": "number",
+					"inferenceType": "explicit",
+					"instruction": "Property premium amount"
+				},
+				"PROPERTY_EFFECTIVE_DATE": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Property policy effective date"
+				},
+				"PROPERTY_EXPIRATION_DATE": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Property policy expiration date"
+				},
+				"OTHER_CARRIER": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Other insurance carrier"
+				},
+				"OTHER_POLICY_NUMBER": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Other policy number"
+				},
+				"OTHER_PREMIUM": {
+					"type": "number",
+					"inferenceType": "explicit",
+					"instruction": "Other premium amount"
+				},
+				"OTHER_EFFECTIVE_DATE": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Other policy effective date"
+				},
+				"OTHER_EXPIRATION_DATE": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Other policy expiration date"
+				}
+			}
+		},
+		"LOSS_HISTORY": {
+			"type": "object",
+			"properties": {
+				"DATE_OF_OCCURRENCE": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Date of the loss occurrence"
+				},
+				"LINE": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Line of business for the loss"
+				},
+				"TYPE_DESCRIPTION_OF_OCCURRENCE_OR_CLAIM": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Description of the loss occurrence or claim"
+				},
+				"DATE_OF_CLAIM": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Date the claim was filed"
+				},
+				"AMOUNT_PAID": {
+					"type": "number",
+					"inferenceType": "explicit",
+					"instruction": "Amount paid for the claim"
+				},
+				"AMOUNT_RESERVED": {
+					"type": "number",
+					"inferenceType": "explicit",
+					"instruction": "Amount reserved for the claim"
+				},
+				"SUBROGATION_YES_NO": {
+					"type": "boolean",
+					"inferenceType": "explicit",
+					"instruction": "Whether subrogation was involved"
+				},
+				"CLAIM_OPEN_YES_NO": {
+					"type": "boolean",
+					"inferenceType": "explicit",
+					"instruction": "Whether the claim is still open"
+				}
+			}
+		}
+	},
+	"properties": {
+		"PRIOR CARRIER INFORMATION": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Details of prior insurance carriers and policies"
+		},
+		"LOSS HISTORY": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Details of past claims and losses"
+		},
+		"SIGNATURE": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Signature of the applicant"
+		},
+		"PRIOR_CARRIER_INFORMATION": {
+			"$ref": "#/definitions/PRIOR_CARRIER_INFORMATION"
+		},
+		"LOSS_HISTORY": {
+			"$ref": "#/definitions/LOSS_HISTORY"
+		}
+	}
+}
