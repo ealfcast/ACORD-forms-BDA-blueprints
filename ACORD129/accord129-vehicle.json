@@ -1,0 +1,260 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"description": "default",
+	"class": "default",
+	"type": "object",
+	"definitions": {
+	  "AGENCY": {
+		"type": "object",
+		"properties": {
+		  "NAME": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Name of the insurance agency"
+		  },
+		  "CUSTOMER_ID": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Agency customer ID"
+		  }
+		}
+	  },
+	  "CARRIER": {
+		"type": "object",
+		"properties": {
+		  "NAME": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Name of the insurance carrier"
+		  },
+		  "NAIC_CODE": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "NAIC code of the insurance carrier"
+		  },
+		  "POLICY_NUMBER": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Policy number assigned by the carrier"
+		  },
+		  "EFFECTIVE_DATE": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Effective date of the policy"
+		  }
+		}
+	  },
+	  "NAMED_INSURED": {
+		"type": "object",
+		"properties": {
+		  "NAME": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Name of the insured"
+		  }
+		}
+	  },
+	  "VEHICLE_DESCRIPTION": {
+		"type": "object",
+		"properties": {
+		  "YEAR": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Year of the vehicle"
+		  },
+		  "Vehicle Number": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Vehicle Number as VEH#"
+		  },
+		  "Body Type": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Body type of car"
+		  },
+		  "MAKE": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Make of the vehicle"
+		  },
+		  "MODEL": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Model of the vehicle"
+		  },
+		  "VIN": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Vehicle Identification Number"
+		  },
+		  "TERRITORY": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Territory code for the vehicle"
+		  },
+		  "GARAGE_ADDRESS": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Address that includes street zipcode county where vehicle is primarily garaged"
+		  },
+		  "VEHICLE_USE Business": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle is used for business purposes"
+		  },
+		  "VEHICLE_USE PLEASURE": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle is used for pleasure"
+		  },
+		  "VEHICLE_USE COMML": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle is used for commercial purposes"
+		  },
+		  "VEHICLE_USE RETAIL": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle is used for retail delivery"
+		  },
+		  "VEHICLE_USE SERVICE": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle is used for service"
+		  },
+		  "VEHICLE_USE FARM": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle is used for farming"
+		  },
+		  "VEHICLE_Coverage LIAB": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle has Liablity Coverage"
+		  },
+		  "VEHICLE_Coverage NoFault": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle had No Fault"
+		  },
+		  "VEHICLE_Coverage ADDNL NoFault": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle had Additional No Fault"
+		  },
+		  "VEHICLE_Coverage MED PAY": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle has medical pay"
+		  },
+		  "VEHICLE_Coverage UNINS MOTOR": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle has Uninsured Motor Coverage"
+		  },
+		  "VEHICLE_Coverage UNDRINS MOTOR": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle has Under insured Motor Coverage"
+		  },
+		  "VEHICLE_Coverage Towing & Labor": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle has Towing and Labor Coverage"
+		  },
+		  "VEHICLE_Coverage SPEC C OF L": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle has specified list of causes of loss"
+		  },
+		  "VEHICLE_Coverage F": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle covers specified Cause of Loss by Fire"
+		  },
+		  "VEHICLE_Coverage FT": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle covers specified Causes of Loss by Fire and Theft"
+		  },
+		  "VEHICLE_Coverage SPEC FTW": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle covers specified Causes of Loss by Fire Theft and Windstorm"
+		  },
+		  "VEHICLE_Coverage LSP": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle covers limited Specified Peril"
+		  },
+		  "VEHICLE_Coverage COMP OTC": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle has Comprehensive Other Than Collision physical damage coverages"
+		  },
+		  "VEHICLE_Coverage COLL": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle has collision coverage"
+		  },
+		  "VEHICLE_Coverage RENT REIMB": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle has rent reimbursement"
+		  },
+		  "VEHICLE_Coverage R": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle has Rental"
+		  },
+		  "VEHICLE_Deductibles AA": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle has agreed deductibles"
+		  },
+		  "VEHICLE_Deductibles ACV": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle has actual cash value deductibles"
+		  },
+		  "VEHICLE_Deductibles COMP OTC": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle has Comprehensive or Other Than Collision physical damage deductibles"
+		  },
+		  "VEHICLE_Deductibles SPEC C OR L": {
+			"type": "boolean",
+			"inferenceType": "explicit",
+			"instruction": "Whether the vehicle has  Specified Cause of Loss deductibles"
+		  },
+		  "VEHICLE_Deductibles amount": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Amount of deductible in dollars for example 1000"
+		  },
+		  "VEHICLE_Deductible amount collision ": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "amount of deductible in dollars for example 1000 COLL "
+		  }
+
+		}
+	 }
+
+	},
+	"properties": {
+	  "AGENCY": {
+		"$ref": "#/definitions/AGENCY"
+	  },
+	  "CARRIER": {
+		"$ref": "#/definitions/CARRIER"
+	  },
+	  "NAMED_INSURED": {
+		"$ref": "#/definitions/NAMED_INSURED"
+	  },
+	  "VEHICLES": {
+		  "$ref": "#/definitions/VEHICLE_DESCRIPTION"
+	  }
+	}
+  }
+  
